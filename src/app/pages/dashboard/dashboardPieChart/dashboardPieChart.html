@@ -1,0 +1,14 @@
+<div class="row pie-charts">
+  <div class="col-lg-6 col-md-6 col-sm-12" ng-repeat="chart in charts">
+    <div ba-panel>
+      <div class="pie-chart-item">
+        <div class="chart" rel="{{ ::chart.color }}" data-percent="60"> <div style="background-color: {{chart.backgroundColor}}"><i class="fa fa-{{ ::chart.icon }}"></i> </div></div>
+        <div class="description">
+          <div>{{ ::chart.description }}</div>
+          <div class="description-stats">{{ ::chart.stats }}</div>
+        </div>
+        <i class="chart-icon i-{{ ::chart.icon }}"></i>
+      </div>
+    </div>
+  </div>
+</div>
